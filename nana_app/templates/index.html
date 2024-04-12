@@ -19,16 +19,38 @@
     <link rel="stylesheet" href='{% static "css/bootstrap.css" %}' />
     <link rel="stylesheet" href='{% static "css/fonts.css" %}' />
     <link rel="stylesheet" href='{% static "css/style.css" %}' />
+
+    <style>
+      .about_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .about_container > * {
+        flex: 1;
+      }
+
+      .about_image {
+        max-width: 50%;
+      }
+
+      about_img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      
+    </style>
+   
   </head>
   <body>
     <div class="preloader">
-      <div>
+      <!-- <div>
         <a class="brand brand-md" href="index.html"
           ><img
-            src='{% static "images/logo-inverse-139x22.svg" %}'
+            src='{% static "images/Nanaheal.png" %}'  style="background-size: cover; width: 139px; height: 100px;"
             alt=""
-            width="139"
-            height="22"
+           
         /></a>
         <div class="page-loader-body">
           <div id="spinningSquaresG">
@@ -42,7 +64,7 @@
             <div class="spinningSquaresG" id="spinningSquaresG_8"></div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="page">
@@ -100,22 +122,17 @@
                         </div>
                         <button class="rd-search-submit" type="submit"></button>
                       </form>
-                      <button
-                        class="rd-navbar-search-toggle"
-                        data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-search-wrap"></button>
                     </div>
                     <ul class="rd-navbar-nav">
                       <li class="rd-nav-item active">
                         <a class="rd-nav-link" href="/">Home</a>
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#">About us</a>
+                        <a class="rd-nav-link" href="#about">About us</a>
                       </li>
+                     
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#">Typography</a>
-                      </li>
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#">Contact us</a>
+                        <a class="rd-nav-link" href="#contact">Contact us</a>
                       </li>
                     </ul>
                   </div>
@@ -134,7 +151,8 @@
         <div class="swiper-wrapper text-center">
           <div
             class="swiper-slide"
-            data-slide-bg='{% static "images/IMG_3031.jpg" %}'  style="background-size: cover; width: 1920px; height: 626px;">
+            data-slide-bg='{% static "images/IMG_3031.jpg" %}'  style="background-size: cover; width: 1100%; height: 626px; ">
+            <div class="dim-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
             <div class="swiper-slide-caption">
               <div class="container">
                 <div class="row justify-content-md-center">
@@ -143,34 +161,18 @@
                       class="slider-header"
                       data-caption-animate="fadeInUp"
                       data-caption-delay="0s">
-                      nanaHeal Enterprises
+                      NanaHeal Enterprise
 
                     </h2>
                     <p
                       class="text-bigger slider-text"
                       data-caption-animate="fadeInUp"
-                      data-caption-delay="100">
-                      The smartest and most flexible Bootstrap template by Zemez
-                      you've ever seen. Create exactly what you need with our
-                      powerful Bootstrap toolkit.
+                      data-caption-delay="100"
+                      style="color: white;">
+                      We help communities manage waste, especially pineapple peels. The collected peels are our raw materials.
+.
                     </p>
-                    <div class="group-xl-responsive">
-                      <a
-                        class="button button-xl button-white-outline-variant-1"
-                        data-caption-animate="fadeInUp"
-                        data-caption-delay="250"
-                        href="#"
-                        data-custom-scroll-to="section-start-journey"
-                        >Start a journey</a
-                      ><a
-                        class="button button-xl button-primary-contrast"
-                        data-caption-animate="fadeInUp"
-                        data-caption-delay="250"
-                        href="#"
-                        target="_blank"
-                        >Get starbis now</a
-                      >
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -179,6 +181,7 @@
           <div
             class="swiper-slide"
             data-slide-bg='{% static "images/IMG_3041.jpg" %}'  style="background-size: cover; width: 1920px; height: 626px;">
+            <div class="dim-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
             <div class="swiper-slide-caption">
               <div class="container">
                 <div class="row justify-content-md-center">
@@ -194,27 +197,9 @@
                       class="text-bigger slider-text"
                       data-caption-animate="fadeInUp"
                       data-caption-delay="100">
-                      Starbis is the easiest way for you to build different
-                      sites without using many themes. Everything you need is
-                      combined in a single template.
+                      By transforming pineapple peels into useful products, we contribute to waste management efforts while also supporting local economies..
                     </p>
-                    <div class="group-xl-responsive">
-                      <a
-                        class="button button-xl button-white-outline-variant-1"
-                        data-caption-animate="fadeInUp"
-                        data-caption-delay="250"
-                        href="#"
-                        data-custom-scroll-to="section-start-journey"
-                        >Start a journey</a
-                      ><a
-                        class="button button-xl button-primary-contrast"
-                        data-caption-animate="fadeInUp"
-                        data-caption-delay="250"
-                        href="#"
-                        target="_blank"
-                        >Get starbis now</a
-                      >
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -223,6 +208,7 @@
           <div
             class="swiper-slide"
             data-slide-bg='{% static "images/IMG_3052.jpg" %}'  style="background-size: cover; width: 1920px; height: 626px;">
+            <div class="dim-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
             <div class="swiper-slide-caption">
               <div class="container">
                 <div class="row justify-content-md-center">
@@ -231,31 +217,19 @@
                       class="slider-header"
                       data-caption-animate="fadeInUp"
                       data-caption-delay="0s">
-                      Ultra Sharp & Responsive
-                    </h2>
+                      Transforming Waste into Valuable Resources                    </h2>
                     <p
                       class="text-bigger slider-text"
                       data-caption-animate="fadeInUp"
                       data-caption-delay="100">
-                      Beautiful and clean designs are optimized for all screen
-                      sizes and types. Taste a new meaning of Retina Ready.
+                      We strive to empower communities in responsibly managing waste by showcasing the potential of pineapple peels as a renewable resource. Through our initiatives, we highlight how these peels can be transformed into valuable products, benefiting both individuals and the environment..
                     </p>
-                    <div class="group-xl-responsive">
-                      <a
-                        class="button button-xl button-white-outline-variant-1"
-                        data-caption-animate="fadeInUp"
-                        data-caption-delay="250"
-                        href="#"
-                        data-custom-scroll-to="section-start-journey"
-                        >Start a journey</a
-                      ><a
-                        class="button button-xl button-primary-contrast"
-                        data-caption-animate="fadeInUp"
-                        data-caption-delay="250"
-                        href="#"
-                        target="_blank"
-                        >Get starbis now</a
-                      >
+                    
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                      <div class="swiper-nav-wrap">
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
                     </div>
                   </div>
                 </div>
@@ -263,10 +237,36 @@
             </div>
           </div>
         </div>
-        <div class="swiper-scrollbar"></div>
-        <div class="swiper-nav-wrap">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+      </section>
+      <section id="about">
+        <div class="row justify-content-md-center">
+          <div class="col-md-11 col-lg-10 col-xl-9 text-center">
+            <h3>
+              <span>About Us</span>
+            </h3>
+        <div class="about_container">
+          
+          <div class="about_image">
+            <img src='{% static "images/IMG_3052.jpg" %}' />
+          </div>
+          <div class="about_text">
+            <p class="text-secondary"style = 'font-size: 15px;   padding-left: 20px;'>
+            
+              This is a beautiful garden Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Facere quibusdam, nulla sed incidunt numquam quas
+              harum ipsa veritatis dolorem labore iste debitis error. Optio vitae
+              corporis dolorem at iusto provident!.loremThis is a beautiful garden
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+              quibusdam, nulla sed incidunt numquam quas harum ipsa veritatisThis is a beautiful garden Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Facere quibusdam, nulla sed incidunt numquam quas
+              harum ipsa veritatis dolorem labore iste debitis error. Optio vitae
+              corporis dolorem at iusto provident!.loremThis is a beautiful garden
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+              quibusdam, nulla sed incidunt numquam quas harum ipsa veritatis
+             
+             
+            </p>
+          </div>
         </div>
       </section>
       <section
@@ -288,12 +288,7 @@
                 your own beautiful site using powerful options & tools,
                 unlimited designs, and responsive framework.
               </p>
-              <a
-                class="button button-xl button-primary"
-                href="#"
-                target="_blank"
-                >Get Starbis Now</a
-              >
+              
             </div>
             <div class="col-md-11 col-lg-7">
               <div class="image-group">
@@ -302,11 +297,11 @@
                   data-wow-duration=".9s"
                   data-wow-delay=".0s"
                   data-wow-offset="80">
-                  <img
-                    src='{% static "images/home-1-243x199.png" %}'
+                  <!-- <img
+                    src='{% static "images/Nanaheal.png" %}'
                     alt=""
                     width="243"
-                    height="199" />
+                    height="199" /> -->
                 </figure>
                 <figure
                   class="wow fadeInRightSmall"
@@ -314,7 +309,7 @@
                   data-wow-delay=".2s"
                   data-wow-offset="200">
                   <img
-                    src='{% static "images/home-2-508x341.png" %}'
+                    src='{% static "images/IMG_3031.jpg" %}'
                     alt=""
                     width="508"
                     height="341" />
@@ -325,135 +320,11 @@
                   data-wow-delay=".4s"
                   data-wow-offset="300">
                   <img
-                    src='{% static "images/home-3-689x469.png" %}'
+                    src='{% static "images/fruits.jpg" %}'
                     alt=""
                     width="689"
                     height="469" />
                 </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="divider-spectrum"></div>
-      <section
-        class="parallax-container bg-black"
-        data-parallax-img='{% static "images/IMG_3052.jpg" %}'  style="background-size: cover; width: 1920px; height: 1225px;">
-        <div class="parallax-content">
-          <div
-            class="section-50 section-md-75 section-xl-top-100 section-xl-bottom-120">
-            <div class="container">
-              <div class="row justify-content-md-center">
-                <div class="col-md-11 col-lg-10 col-xl-9 text-center">
-                  <h3>
-                    <span>Ocean</span><em>of</em><span>Possibilities</span>
-                  </h3>
-                  <p>
-                    Check out an incredible set of features provided by Starbis.
-                    We collected all common required features in one template.
-                    That makes it one of the most awesome ones on the market.
-                    Starbis allows you to take control of almost every element
-                    and section of the site.
-                  </p>
-                </div>
-              </div>
-              <div class="row row-40 row-xl-60 offset-xl-top-60">
-                <div class="col-md-6 col-lg-4">
-                  <article class="icon-box-vertical">
-                    <span
-                      class="novi-icon icon icon-primary icon-md material-icons-security"></span>
-                    <h5 class="icon-box-header">
-                      <a href="#">Based on Bootstrap 4</a>
-                    </h5>
-                    <p>
-                      Starbis is based on the one of the most popular and
-                      flexible CSS Frameworks - Bootstrap. It gives you
-                      confidence in quality and flexibility of the product you
-                      buy.
-                    </p>
-                  </article>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <article class="icon-box-vertical">
-                    <span
-                      class="novi-icon icon icon-primary icon-md material-icons-build"></span>
-                    <h5 class="icon-box-header">
-                      <a href="#">Extended Toolkit</a>
-                    </h5>
-                    <p>
-                      Starbis provides a powerful and flexible extended toolkit
-                      in addition to basic Bootstrap. If you’ve used Bootstrap
-                      itself, you’ll find this all super familiar and
-                      easy-to-use.
-                    </p>
-                  </article>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <article class="icon-box-vertical">
-                    <span
-                      class="novi-icon icon icon-primary icon-md material-icons-palette"></span>
-                    <h5 class="icon-box-header">
-                      <a href="#">Unlimited Skins &amp; Colors</a>
-                    </h5>
-                    <p>
-                      Starbis includes a wide variety of skins and colors, from
-                      which you can easily select what you like to attract the
-                      attention of your customers to your company.
-                    </p>
-                  </article>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <article class="icon-box-vertical">
-                    <span
-                      class="novi-icon icon icon-primary icon-md material-icons-layers"></span>
-                    <h5 class="icon-box-header">
-                      <a href="#">Parallax Effects</a>
-                    </h5>
-                    <p>
-                      Everyone loves parallax scrolling effects, they are simply
-                      beautiful. Starbis has advanced parallax options &amp;
-                      controls based on flexible and easy-to-use RD Parallax
-                      plugin.
-                    </p>
-                  </article>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <article class="icon-box-vertical">
-                    <span
-                      class="novi-icon icon icon-primary icon-md material-icons-device_hub"></span>
-                    <h5 class="icon-box-header">
-                      <a href="#">Social Integration</a>
-                    </h5>
-                    <p>
-                      Starbis has full set of social icons and styling options
-                      which allow you to share any content the way you want.
-                    </p>
-                  </article>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <article class="icon-box-vertical">
-                    <span
-                      class="novi-icon icon icon-primary icon-md material-icons-directions_run"></span>
-                    <h5 class="icon-box-header">
-                      <a href="#">Made for Speed</a>
-                    </h5>
-                    <p>
-                      We know how embarrassing and time-consuming content
-                      loading can be, so we took care of pages optimization for
-                      your smooth experience.
-                    </p>
-                  </article>
-                </div>
-              </div>
-              <div class="row offset-xl-top-60">
-                <div class="col-sm-12 text-center">
-                  <a
-                    class="button button-xl button-primary"
-                    href="#"
-                    target="_blank"
-                    >Get Starbis Now</a
-                  >
-                </div>
               </div>
             </div>
           </div>
@@ -471,7 +342,7 @@
             <div class="col-lg-4 col-xl-3">
               <a
                 class="button button-xl button-black-outline"
-                href="#"
+                href="https://www.youtube.com/watch?v=Yq05ycsaSBc&t=1s"
                 target="_blank"
                 >You tube video</a
               >
@@ -479,271 +350,53 @@
           </div>
         </div>
       </section>
-      <section
-        class="parallax-container bg-black"
-        data-parallax-img='{% static "images/parallax-2.jpg" %}'>
-        <div class="parallax-content">
-          <div class="section-60 section-md-100 section-xl-120">
-            <div class="container text-center">
-              <div class="row">
-                <div class="col-sm-12">
-                  <a
-                    class="link-circle link-white"
-                    data-lightgallery="item"
-                    href="#"
-                    ><span
-                      class="novi-icon icon icon-xl fl-36-slim-icons-play90"></span
-                  ></a>
-                  <h3>About Us</h3>
-                  <p class="big fw-light">
-                    <span class="d-inline-block" style="max-width: 740px"
-                      >We are an internationally recognized web design studio,
-                      providing first-class templates at affordable prices. Our
-                      designs are used worldwide by companies of any size and
-                      type as well as by individuals - musicians, writers,
-                      businessmen etc.</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+      
+      
       <section
         class="section section-60 section-md-100 novi-background bg-black">
+        <div class="row justify-content-md-center">
+          <div class="col-md-11 col-lg-10 col-xl-9 text-center">
+            <h3>
+              <span>OUR <span>IMPACT</span>
+            </h3>
         <div class="container">
           <div class="row row-40">
             <div class="col-sm-6 col-md-3">
               <div class="box-counter">
+                
                 <span
-                  class="novi-icon icon icon-md icon-primary material-icons-content_copy"></span>
-                <div class="text-large counter">58249</div>
-                <h5 class="box-header">templates</h5>
+                  class="novi-icon icon icon-md icon-primary material-icons-mood"></span>
+                <div class="text-large counter">100</div>
+                <h5 class="box-header">Children saved</h5>
               </div>
             </div>
             <div class="col-sm-6 col-md-3">
               <div class="box-counter">
                 <span
                   class="novi-icon icon icon-md icon-primary material-icons-mood"></span>
-                <div class="text-large counter counter-k">246</div>
+                <div class="text-large counter counter">100</div>
                 <h5 class="box-header">happy clients</h5>
               </div>
             </div>
             <div class="col-sm-6 col-md-3">
               <div class="box-counter">
-                <span
-                  class="novi-icon icon icon-md icon-primary material-icons-access_time"></span>
-                <div class="text-large counter">1200</div>
-                <h5 class="box-header">hours of coding</h5>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <div class="box-counter">
-                <span
-                  class="novi-icon icon icon-md icon-primary material-icons-code"></span>
-                <div class="text-large counter counter-k">834</div>
-                <h5 class="box-header">lines of code</h5>
+                <span class="novi-icon icon icon-md icon-primary material-icons-mood"></span>
+
+                <div class="text-large counter">100</div>
+                <h5 class="box-header">jobs created </h5>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section
-        class="section section-50 section-md-90 section-xl-top-120 section-xl-bottom-145">
-        <div class="container isotope-wrap">
-          <div class="row row-40">
-            <div class="col-sm-12 text-center">
-              <h3>
-                <span>Check</span><em>our portfolio</em
-                ><span>with Other Themes</span>
-              </h3>
-              <ul class="isotope-filters-responsive">
-                <li>
-                  <p>Choose your category:</p>
-                </li>
-                <li class="block-top-level">
-                  <button
-                    class="isotope-filters-toggle button button-sm button-default"
-                    data-custom-toggle="#isotope-1"
-                    data-custom-toggle-disable-on-blur="true">
-                    Filter<span class="caret"></span>
-                  </button>
-                  <div
-                    class="isotope-filters isotope-filters-minimal isotope-filters-horizontal"
-                    id="isotope-1">
-                    <ul class="list-inline">
-                      <li>
-                        <a class="active" data-isotope-filter="*" href="#"
-                          >All</a
-                        >
-                      </li>
-                      <li>
-                        <a data-isotope-filter="Category 1" href="#"
-                          >Webdesign</a
-                        >
-                      </li>
-                      <li>
-                        <a data-isotope-filter="Category 2" href="#">UI/UX</a>
-                      </li>
-                      <li>
-                        <a data-isotope-filter="Category 3" href="#"
-                          >Branding</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-12">
-              <div
-                class="row isotope isotope-gutter-default"
-                data-lightgallery="group"
-                data-lg-thumbnail="false">
-                <div
-                  class="col-12 col-md-6 col-lg-4 isotope-item"
-                  data-filter="Category 1">
-                  <div class="thumbnail thumbnail-variant-3">
-                    <a class="link link-external" href="#"
-                      ><span class="novi-icon icon icon-sm fa fa-link"></span
-                    ></a>
-                    <figure>
-                      <img
-                        src='{% static "images/gallery-grid-1-370x278.jpg" %}'
-                        alt=""
-                        width="370"
-                        height="278" />
-                    </figure>
-                    <div class="caption">
-                      <a
-                        class="link link-original"
-                        href='{% static "images/gallery-1-1200x900_original.jpg" %}'
-                        data-lightgallery="item"></a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-12 col-md-6 col-lg-4 isotope-item"
-                  data-filter="Category 2">
-                  <div class="thumbnail thumbnail-variant-3">
-                    <a class="link link-external" href="#"
-                      ><span class="novi-icon icon icon-sm fa fa-link"></span
-                    ></a>
-                    <figure>
-                      <img
-                        src='{% static "images/gallery-grid-2-370x278.jpg" %}'
-                        alt=""
-                        width="370"
-                        height="278" />
-                    </figure>
-                    <div class="caption">
-                      <a
-                        class="link link-original"
-                        href='{% static "images/gallery-2-1200x978_original.jpg" %}'
-                        data-lightgallery="item"></a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-12 col-md-6 col-lg-4 isotope-item"
-                  data-filter="Category 3">
-                  <div class="thumbnail thumbnail-variant-3">
-                    <a class="link link-external" href="#"
-                      ><span class="novi-icon icon icon-sm fa fa-link"></span
-                    ></a>
-                    <figure>
-                      <img
-                        src='{% static "images/gallery-grid-3-370x278.jpg" %}'
-                        alt=""
-                        width="370"
-                        height="278" />
-                    </figure>
-                    <div class="caption">
-                      <a
-                        class="link link-original"
-                        href='{% static "images/gallery-3-1200x606_original.jpg" %}'
-                        data-lightgallery="item"></a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-12 col-md-6 col-lg-4 isotope-item"
-                  data-filter="Category 1">
-                  <div class="thumbnail thumbnail-variant-3">
-                    <a class="link link-external" href="#"
-                      ><span class="novi-icon icon icon-sm fa fa-link"></span
-                    ></a>
-                    <figure>
-                      <img
-                        src='{% static "images/gallery-grid-4-370x278.jpg" %}'
-                        alt=""
-                        width="370"
-                        height="278" />
-                    </figure>
-                    <div class="caption">
-                      <a
-                        class="link link-original"
-                        href='{% static "images/gallery-4-1200x713_original.jpg" %}'
-                        data-lightgallery="item"></a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-12 col-md-6 col-lg-4 isotope-item"
-                  data-filter="Category 2">
-                  <div class="thumbnail thumbnail-variant-3">
-                    <a class="link link-external" href="#"
-                      ><span class="novi-icon icon icon-sm fa fa-link"></span
-                    ></a>
-                    <figure>
-                      <img
-                        src='{% static "images/gallery-grid-5-370x278.jpg" %}'
-                        alt=""
-                        width="370"
-                        height="278" />
-                    </figure>
-                    <div class="caption">
-                      <a
-                        class="link link-original"
-                        href='{% static "images/gallery-5-1200x900_original.jpg" %}'
-                        data-lightgallery="item"></a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-12 col-md-6 col-lg-4 isotope-item"
-                  data-filter="Category 3">
-                  <div class="thumbnail thumbnail-variant-3">
-                    <a class="link link-external" href="#"
-                      ><span class="novi-icon icon icon-sm fa fa-link"></span
-                    ></a>
-                    <figure>
-                      <img
-                        src='{% static "images/gallery-grid-6-370x278.jpg" %}'
-                        alt=""
-                        width="370"
-                        height="278" />
-                    </figure>
-                    <div class="caption">
-                      <a
-                        class="link link-original"
-                        href='{% static "images/gallery-6-1200x900_original.jpg" %}'
-                        data-lightgallery="item"></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
       <section
         class="section section-50 section-md-90 section-xl-120 bg-gray-lighter novi-background">
         <div class="container">
           <div class="text-center">
             <h3>Testimonials</h3>
-            <p>
+            <p style="color: white;">
               Customers who have used our product have shared glowing reviews, testifying to its effectiveness and satisfaction.
             </p>
           </div>
@@ -760,7 +413,7 @@
                 </div>
                 <div class="thumbnail-caption">
                   <h5 class="header"><a href="#">Julien Miro</a></h5>
-                  <p>“Since I partnered with nanaHeal, I have been able to achieve a clean working space and earn
+                  <p >“Since I partnered with nanaHeal, I have been able to achieve a clean working space and earn
                     more income from my business. Asante.” SAMUEL KIARIE, Pineapple Vendor.”</p>
                 </div>
               </div>
@@ -821,8 +474,9 @@
         </div>
       </section>
       <section
-        class="parallax-container bg-black"
-        data-parallax-img='{% static "images/IMG_3052.jpg" %}'  style="background-size: cover; width: 1920px; height: 1225px;">
+        class="parallax-container bg-black" 
+        data-parallax-img='{% static "images/IMG_3052.jpg" %}'  style="background-size: cover; width: 1920px; height: 800px;">
+        <div class="dim-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
         <div class="parallax-content">
           <div class="section-60 section-md-90 section-xl-120">
             <div class="container text-center">
@@ -839,7 +493,8 @@
                       data-nav="true"
                       data-numbering="#owl-numbering-1"
                       data-animation-in="fadeIn"
-                      data-animation-out="fadeOut">
+                      data-animation-out="fadeOut"
+                      style = "margin-bottom:10px">
                       <div class="item">
                         <blockquote class="quote-minimal quote-minimal-inverse">
                           <div class="quote-body">
@@ -864,13 +519,13 @@
         </div>
       </section>
 
-      <section
+      <section id = 'contact'
         class="section section-40 section-md-top-75 section-md-bottom-60 bg-cod-gray novi-background">
         <div class="container text-center text-md-start">
           <div
             class="row row-30 align-items-md-center justify-content-lg-center justify-content-xl-start">
             <div class="col-lg-11 col-xl-3">
-                ><img
+                <img
                   src='{% static "images/Nanaheal.png" %}'  style="background-size: cover; width:139px; height:100px;"
                   alt=""
                   width="139"
@@ -884,7 +539,7 @@
                     class="unit unit-horizontal unit-spacing-xs align-items-center justify-content-center unit-sm-left">
                     <div class="unit-left">
                       <span
-                        class="novi-icon icon icon-md-custom icon-gunsmoke material-icons-place"></span>
+                        class="novi-icon icon icon-md-custom icon-gunsmoke material-icons-place" style="color: white;"></span>
                     </div>
                     <div class="unit-body fw-light">
                       <a class="link-light-03 d-inline" href="https://maps.app.goo.gl/7F92akeon1oAZtpG8"
@@ -898,7 +553,7 @@
                     class="unit unit-horizontal unit-spacing-xs align-items-center justify-content-center unit-sm-left">
                     <div class="unit-left">
                       <span
-                        class="novi-icon icon icon-md-custom icon-gunsmoke material-icons-phone"></span>
+                        class="novi-icon icon icon-md-custom icon-gunsmoke material-icons-phone" style="color: white;"></span>
                     </div>
                     <div class="unit-body fw-light">
                       <div class="link-wrap">
