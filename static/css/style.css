@@ -112,8 +112,7 @@ body {
     "Helvetica Neue", Arial, sans-serif;
   -webkit-text-size-adjust: none;
   color: #9f9f9f;
-  background-color: #0ef5c7;
-  /* background-color: #f9fcfc; */
+  background-color: #f9fcfc;
   font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
   text-rendering: optimizeLegibility;
